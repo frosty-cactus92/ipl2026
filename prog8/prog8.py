@@ -39,7 +39,7 @@ def find_peg(disc): #helper function to get the peg , that a particular disc is 
 def hanoi_iter(n):
     total = (1<<n) - 1 ## Total number of moves = 2^n - 1
     for i in range(1,total+1):
-        disc = (i&-i).bit_length() #obtaining the lowest sit bit via the bit.length() function , after adding the opposite signed integers , to obrain disc to move
+        disc = (i&-i).bit_length() #obtaining the lowest sit bit via the bit.length() function , after adding the opposite signed integers , to obtain disc to move
         dir = (-1 if (n+disc)%2 == 0 else +1) #you are moving the discs from the 0 peg to the last peg in the table , which is 2 , effectively index -1 , so -1 if the parity is even , else +!
 
         src_peg = find_peg(disc)
