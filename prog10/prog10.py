@@ -1,5 +1,5 @@
 ## Hoare's partition algorithm swaps an array's elements in place , based on a chosen pivot. This pivot is the first element within your array
-## All elements that are than the pivot stay on the left side of the array , whereas all elements that are greater , are pushed to the right.
+## All elements that are lesser than the pivot stay on the left side of the array , whereas all elements that are greater , are pushed to the right.
 ## Unlike Lomuto's partition , the pivot may or may not end up in the correct final position for sorting.
 arr = [5,3,8,4,2,7,1,10]
 i = -1 ## we pick out of bounds first , since after every iteration/swap , we need to verify if the elements on either side still satisfy
